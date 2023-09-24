@@ -13,7 +13,7 @@ Objetivos Generales:
 
 Objetivos Especificos:
 
-- [X] Armar un robot tipo auto, utilizando un ESP32, 3 sensores de linea, 1 camara, 2 servos, una rueda loca y un datalogger. (El robot deberia tener un aruco 99)
+- [X] Armar un robot tipo auto, utilizando un ESP32 (Wemos d1 r32), 3 sensores de linea, 1 camara, 2 servos, una rueda loca y un datalogger. (El robot deberia tener un aruco 99)
 - [ ] Luego para poder crear el software, sera necesario documentar bien la compatibilidad de los sensores y sus librerias.
   - [X] Plantilla informe (En proceso)
   - [ ] Documentar datasheet
