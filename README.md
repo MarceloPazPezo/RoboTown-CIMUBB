@@ -25,3 +25,19 @@ Objetivos Especificos:
 - [ ] Codigo que guarde los datos en el datalogger. (Victor Lopez)
 - [ ] Codigo que comunique con el satelite.. (Jose y Jammet)
 - [ ] Controlar ciertos datos utilizando una interfaz grafica en python de forma local. (Juan)
+
+## Ideas
+
+![Demo de la ciudad](Imagenes/DemoMapaRoboTown.png)
+
+- Se utilizan ArUcos de 4x4.
+- Se supone que el robot utilizara los sensores 4 y 5 en todo momento, para seguir la linea.
+- Se supone que se utilizara los sensores 3, 4, 5 y 6 para detectar los cruces y disminuir la velocidad para utilizar el codigo que detecta el aruco.
+  - Los datos a ingresar seran con los sensores 4 al 6, ademas de utilizar 3 y 7 se definira los bordes del aruco.
+
+### Medidas
+
+- Supongamos que cada cuadrado tiene un tamaño de 7,925 mm
+- Por lo tanto cada ArUco sera de unos 47,55 x 47,55 mm
+- Las lineas deberian ser de 15,85 mm de ancho (2 cuadrados)
+- 

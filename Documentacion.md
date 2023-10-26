@@ -14,3 +14,5 @@
 
 [Esp32 y OV7670](https://github.com/bitluni/ESP32CameraI2S)
 [... more](https://medium.com/@mudassar.tamboli/esp32-ov7670-websocket-video-camera-26c35aedcc64)
+
+[Arduino UNO with OV7670](https://www.instructables.com/OV7670-Arduino-Camera-Sensor-Module-Framecapture-T/)
