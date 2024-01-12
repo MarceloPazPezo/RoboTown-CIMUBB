@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control RoboTown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .column {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        @media screen and (min-width: 1080px) {
+            .container {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+        .controls {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            width: 60%;
+            margin-top: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        button {
+            width: 100%;
+            aspect-ratio: 1/1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        button.pressed {
+            background-color: #e0e0e0;
+        }
+
+        button:hover {
+            transform: translate(2px, 2px);
+        }
+
+        button:active {
+            transform: translate(5px, 5px);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .google-forms-button {
+            width: auto;
+            height: auto;
+            background-color: rgb(0, 255, 0);
+            border-radius: 5px;
+            color: #202124;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 36px;
+            padding: 0 16px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+        }
+
+        .google-forms-button:hover {
+            transform: translate(2px, 2px);
+            background-color: limegreen;
+        }
+
+        .google-forms-button:active {
+            background-color: limegreen;
+            transform: translate(5px, 5px);
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            
+            width: auto;
+            min-width: 350px;
+            max-width: 550px;
+            margin-top: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        form label {
+            display: flex;
+            align-items: center;
+            margin: 5px;
+        }
+        form input {
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Titulo">
+        <h1>Control Automovil de RoboTown</h1>
+    </div>
+    <div class="container">
+
+        <div class="column">
+            <div id="image">
+                <img src="/imagen.jpg" alt="Imagen de ciudad RoboTown" style="width: 100%; height: auto;">
+            </div>
+        </div>
+
+        <div class="column">
+            
+            <form id="myForm" action="/Enviar" method="post">
+                <label for="rutaInput">Ruta:</label>
+                <input type="text" name="rutaText" placeholder="EJ:1-2-3-7-10"><br>
+                <input class="google-forms-button" type="submit" value="Enviar" onclick="sendData()">
+            </form>
+
+            <div class="controls">
+    
+                <a href="IzquierdaN"><button onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">Izquierda 90</button></a>
+                
+                <a href="Avanzar"><button onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">Avanzar</button></a>
+                
+                <a href="DerechaN"><button onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">Derecha 90</button></a>
+                
+                <a href="Izquierda"><button onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">Izquierda</button></a>
+                
+                <a href="Detener"><button onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">Detener</button></a>
+                
+                <a href="Derecha"><button onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">Derecha</button></a>
+    
+                <button style="visibility: hidden;"></button>
+    
+                <a href="Retroceder"><button onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">Retroceder</button></a>
+                
+                <button style="visibility: hidden;"></button>
+            </div>
+        </div>
+    </div>    
+
+    <script>
+
+    </script>
+</body>
+</html>
