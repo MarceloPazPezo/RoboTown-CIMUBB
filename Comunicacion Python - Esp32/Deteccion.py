@@ -1,3 +1,13 @@
+#
+#  * Autor: Marcelo Paz
+#  * Fecha: 14/01/2024
+#  * Descripcion: Codigo para el control de un robot utilizando comunicación websocket y control por ArUco 99.
+#  * Firma:
+#   elnube      _..----.._    _
+#             .'  .--.    "-.(0)_
+# '-.__.-'"'=:|   ,  _)_ \__ . c\'-..
+#              '''------'---''---'-"
+#
 import numpy as np
 import websocket
 import time
